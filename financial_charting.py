@@ -2,7 +2,11 @@ import sys
 from alpha_vantage.timeseries import TimeSeries
 from alpha_vantage.foreignexchange import ForeignExchange
 #import pandas as pd
-from PyQt5.QtWidgets import QMainWindow, QAction, QMenu, QApplication, QDesktopWidget
+from PyQt5.QtWidgets import QMainWindow, QAction, QMenu, \
+    QApplication, QDesktopWidget, qApp
+from PyQt5.QtGui import QIcon
+import qdarkgraystyle
+from PyQt5 import QtCore, QtGui
 import matplotlib.pyplot as plt
 #from matplotlib.dates import (MONDAY, DateFormatter,
 #                              WeekdayLocator, date2num)
@@ -27,13 +31,13 @@ class main_chart_window(QMainWindow):
     def __init__(self):
         super().__init__()
 
-        self.initUI()
+        self.init_ui()
 
     def init_menus(self):
         menubar = self.menuBar()
 
         ##### FILE MENU #####
-        file_menu = menubar.addMenu('File')
+        file_menu = menubar.addMenu('&File')
 
         new_menu = QMenu('New', self)
         new_sheet_act = QAction('Worksheet', self)
@@ -42,9 +46,15 @@ class main_chart_window(QMainWindow):
         new_menu.addAction(new_chart_act)
 
         save_act = QAction('Save', self)
-        save_all_act = QAction('Save All', self)
-        open_act = QAction('Open', self)
-        exit_act = QAction('Exit', self)
+
+        save_all_act = QAction(QIcon('save.png'), '&Save All', self)
+        save_all_act.setShortcut('Ctrl+S')
+
+        open_act = QAction(QIcon('open.png'), '&Open', self)
+
+        exit_act = QAction('&Exit', self)
+        exit_act.setShortcut('Ctrl+Q')
+        exit_act.triggered.connect(qApp.quit)
 
         file_menu.addMenu(new_menu)
         file_menu.addAction(save_act)
@@ -54,15 +64,22 @@ class main_chart_window(QMainWindow):
         file_menu.addAction(exit_act)
 
         ##### EDIT MENU #####
-        edit_menu = menubar.addMenu('Edit')
+        edit_menu = menubar.addMenu('&Edit')
 
-        undo_act = QAction('Undo', self)
-        redo_act = QAction('Redo', self)
+        undo_act = QAction(QIcon('undo.png'), 'Undo', self)
+        redo_act = QAction(QIcon('redo.png'), 'Redo', self)
+        cut_act = QAction(QIcon('cut.png'), '&Cut', self)
+        copy_act = QAction(QIcon('copy.png'), '&Copy', self)
+        paste_act = QAction(QIcon('paste.png'), '&Paste', self)
 
-        edit_menu.addAction(redo_act)
         edit_menu.addAction(undo_act)
+        edit_menu.addAction(redo_act)
+        edit_menu.addSeparator()
+        edit_menu.addAction(cut_act)
+        edit_menu.addAction(copy_act)
+        edit_menu.addAction(paste_act)
 
-    def initUI(self):
+    def init_ui(self):
         self.init_menus()
 
         screen = app.primaryScreen()
@@ -86,5 +103,7 @@ class main_chart_window(QMainWindow):
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
+    app.setStyleSheet(qdarkgraystyle.load_stylesheet())
     ex = main_chart_window()
     sys.exit(app.exec_())
+
