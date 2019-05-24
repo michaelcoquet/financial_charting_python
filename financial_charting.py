@@ -8,27 +8,18 @@ from PyQt5.QtGui import QIcon
 import qdarkgraystyle
 from PyQt5.QtWidgets import QMainWindow, QApplication, QPushButton, QWidget, QAction, QTabWidget,QVBoxLayout
 from PyQt5.QtGui import QIcon
+from PyQt5.QtWidgets import QMdiArea, QMdiSubWindow, QTextEdit
 from PyQt5.QtCore import pyqtSlot
 from PyQt5 import QtCore, QtGui
-import matplotlib.pyplot as plt
-#from matplotlib.dates import (MONDAY, DateFormatter,
-#                              WeekdayLocator, date2num)
-#from matplotlib.figure import Figure
-#from mpl_finance import plot_day_summary_ohlc
+#import matplotlib.pyplot as plt
+from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
+from matplotlib.backends.backend_qt5agg import NavigationToolbar2QT as NavToolBar
+from matplotlib.dates import (MONDAY, DateFormatter,
+                              WeekdayLocator, date2num)
+from matplotlib.figure import Figure
+from mpl_finance import plot_day_summary_ohlc
 
 api_key = 'NXI8RVGAPCK335JL'
-
-# ts = TimeSeries(key=api_key, output_format='pandas')
-# data, meta_data = ts.get_intraday(symbol='MSFT', interval='1min', outputsize='full')
-#
-# forex = ForeignExchange(key=api_key, output_format='pandas')
-# fx_data, fx_meta_data = forex.get_currency_exchange_intraday(from_symbol='USD', to_symbol='CAD',
-#                                                              interval='1min')
-#
-# fx_data['4. close'].plot()
-# plt.title('Intraday Times Series for the MSFT stock (1 min)')
-# plt.show()
-
 
 class MainChartWindow(QMainWindow):
 
@@ -50,6 +41,7 @@ class MainChartWindow(QMainWindow):
         new_space_act = QAction('Workspace', self)
         new_space_act.triggered.connect(table_widget.new_workspace)
         new_chart_act = QAction('Chart', self)
+        new_chart_act.triggered.connect(table_widget.new_chart)
         new_menu.addAction(new_space_act)
         new_menu.addAction(new_chart_act)
 
@@ -110,6 +102,7 @@ class MainChartWindow(QMainWindow):
 class WorkspaceTabs(QWidget):
     layout = None
     tabs = None
+    mdi = None
 
     def __init__(self, parent):
         super(QWidget, self).__init__(parent)
@@ -126,8 +119,58 @@ class WorkspaceTabs(QWidget):
         self.tabs.resize(300, 200)
 
         new_tab = QWidget()
+        new_tab.layout = QVBoxLayout(new_tab)
+
+        self.mdi = QMdiArea()
+
+        new_tab.layout.addWidget(self.mdi)
 
         self.tabs.addTab(new_tab, "New Workspace")
+
+    def new_chart(self):
+        if self.tabs.count() > 0:
+            # create new mdi sub window
+            sub = QMdiSubWindow()
+            # TODO: make new chart widget and replace QTextEdit widget here
+            sub.setWidget(Chart(self))
+            sub.setWindowTitle("New Chart")
+            self.mdi.addSubWindow(sub)
+            sub.show()
+        else:
+            self.new_workspace()
+            self.new_chart()
+
+
+class Chart(QWidget):
+    def __init__(self, parent=None):
+        QWidget.__init__(self, parent=parent)
+        qfigWidget = QWidget()
+
+        ts = TimeSeries(key=api_key, output_format='pandas')
+        data, meta_data = ts.get_intraday(symbol='MSFT', interval='1min', outputsize='full')
+
+        forex = ForeignExchange(key=api_key, output_format='pandas')
+        fx_data, fx_meta_data = forex.get_currency_exchange_intraday(from_symbol='USD', to_symbol='CAD',
+                                                              interval='1min')
+
+        fig = Figure((5.0, 4.0), dpi=100)
+        canvas = FigureCanvas(fig)
+        canvas.setParent(qfigWidget)
+        toolbar = NavToolBar(canvas, qfigWidget)
+        axes = fig.add_subplot(111)
+        axes.plot(fx_data['4. close'])
+
+        # place plot components in a layout
+        plotLayout = QVBoxLayout()
+        plotLayout.addWidget(canvas)
+        plotLayout.addWidget(toolbar)
+        qfigWidget.setLayout(plotLayout)
+
+        # prevent the canvas to shrink beyond a point
+        # original size looks like a good minimum size
+        canvas.setMinimumSize(canvas.size())
+
+        self.setLayout(plotLayout)
 
 
 if __name__ == '__main__':
