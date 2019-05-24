@@ -6,6 +6,9 @@ from PyQt5.QtWidgets import QMainWindow, QAction, QMenu, \
     QApplication, QDesktopWidget, qApp
 from PyQt5.QtGui import QIcon
 import qdarkgraystyle
+from PyQt5.QtWidgets import QMainWindow, QApplication, QPushButton, QWidget, QAction, QTabWidget,QVBoxLayout
+from PyQt5.QtGui import QIcon
+from PyQt5.QtCore import pyqtSlot
 from PyQt5 import QtCore, QtGui
 import matplotlib.pyplot as plt
 #from matplotlib.dates import (MONDAY, DateFormatter,
@@ -26,23 +29,28 @@ api_key = 'NXI8RVGAPCK335JL'
 # plt.title('Intraday Times Series for the MSFT stock (1 min)')
 # plt.show()
 
-class main_chart_window(QMainWindow):
+
+class MainChartWindow(QMainWindow):
 
     def __init__(self):
         super().__init__()
 
         self.init_ui()
 
-    def init_menus(self):
+    def init_ui(self):
+        table_widget = WorkspaceTabs(self)
+        self.setCentralWidget(table_widget)
+
         menubar = self.menuBar()
 
         ##### FILE MENU #####
         file_menu = menubar.addMenu('&File')
 
         new_menu = QMenu('New', self)
-        new_sheet_act = QAction('Worksheet', self)
+        new_space_act = QAction('Workspace', self)
+        new_space_act.triggered.connect(table_widget.new_workspace)
         new_chart_act = QAction('Chart', self)
-        new_menu.addAction(new_sheet_act)
+        new_menu.addAction(new_space_act)
         new_menu.addAction(new_chart_act)
 
         save_act = QAction('Save', self)
@@ -78,9 +86,7 @@ class main_chart_window(QMainWindow):
         edit_menu.addAction(cut_act)
         edit_menu.addAction(copy_act)
         edit_menu.addAction(paste_act)
-
-    def init_ui(self):
-        self.init_menus()
+        edit_menu.addAction(paste_act)
 
         screen = app.primaryScreen()
         size = screen.availableGeometry()
@@ -101,9 +107,32 @@ class main_chart_window(QMainWindow):
         self.move(qr.topLeft())
 
 
+class WorkspaceTabs(QWidget):
+    layout = None
+    tabs = None
+
+    def __init__(self, parent):
+        super(QWidget, self).__init__(parent)
+        self.layout = QVBoxLayout(self)
+        # Initialize tab screen
+        self.tabs = QTabWidget()
+        self.tabs.resize(300, 200)
+        self.tabs.setTabsClosable(True)
+        # Add tabs to widget
+        self.layout.addWidget(self.tabs)
+        self.setLayout(self.layout)
+
+    def new_workspace(self):
+        self.tabs.resize(300, 200)
+
+        new_tab = QWidget()
+
+        self.tabs.addTab(new_tab, "New Workspace")
+
+
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     app.setStyleSheet(qdarkgraystyle.load_stylesheet())
-    ex = main_chart_window()
+    ex = MainChartWindow()
     sys.exit(app.exec_())
 
