@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from PyQt5.QtCore import Qt, QSortFilterProxyModel
+from PyQt5.QtGui import QFont
 from PyQt5 import QtCore
 from PyQt5.QtGui import QKeyEvent
 from PyQt5.QtWidgets import QCompleter, QComboBox
@@ -11,6 +12,10 @@ class QComboSearch(QComboBox):
         super(QComboSearch, self).__init__(parent)
 
         self.setFocusPolicy(Qt.StrongFocus)
+        font = QFont()
+        font.setFamily("Noto Mono")
+        self.setFont(font)
+        self.view().setFont(font)
         self.setEditable(True)
 
         # add a filter model to filter matching items
