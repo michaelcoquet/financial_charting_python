@@ -2,8 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="883ae340-4eab-48f9-8b54-9178342e6e3b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/QStockSearch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QComboSearch.py" beforeDir="false" afterPath="$PROJECT_DIR$/QComboSearch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Currencies.db" beforeDir="false" afterPath="$PROJECT_DIR$/symbols.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QComboSearch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI_MainWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI_MainWindow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WorkspaceTabs.py" beforeDir="false" afterPath="$PROJECT_DIR$/WorkspaceTabs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alpha_vantage/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alpha_vantage/MANIFEST.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alpha_vantage/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alpha_vantage/alpha_vantage/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alpha_vantage/alpha_vantage/alphavantage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alpha_vantage/alpha_vantage/cryptocurrencies.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alpha_vantage/alpha_vantage/foreignexchange.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alpha_vantage/alpha_vantage/sectorperformance.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alpha_vantage/alpha_vantage/techindicators.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alpha_vantage/alpha_vantage/timeseries.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alpha_vantage/docs/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alpha_vantage/docs/conf.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alpha_vantage/docs/index.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alpha_vantage/docs/make.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alpha_vantage/docs/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alpha_vantage/docs/source/alpha_vantage.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alpha_vantage/docs/source/modules.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alpha_vantage/helpers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alpha_vantage/helpers/pipy_rst_convert.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alpha_vantage/images/docs_cripto_btc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alpha_vantage/images/docs_data_frame_header.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alpha_vantage/images/docs_sp_rt_example.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alpha_vantage/images/docs_ti_msft_example.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alpha_vantage/images/docs_ts_msft_example.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alpha_vantage/setup.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alpha_vantage/setup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alpha_vantage/test_alpha_vantage/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alpha_vantage/test_alpha_vantage/test_alphavantage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alpha_vantage/test_alpha_vantage/test_data/global_quote" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alpha_vantage/test_alpha_vantage/test_data/mock_batch_quotes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alpha_vantage/test_alpha_vantage/test_data/mock_crypto_currencies" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alpha_vantage/test_alpha_vantage/test_data/mock_foreign_exchange" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alpha_vantage/test_alpha_vantage/test_data/mock_sector" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alpha_vantage/test_alpha_vantage/test_data/mock_technical_indicator" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alpha_vantage/test_alpha_vantage/test_data/mock_time_series" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alpha_vantage/test_alpha_vantage/test_data/symbol_search" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alpha_vantage/test_alpha_vantage/test_integration_alphavantage.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/financial_charting.py" beforeDir="false" afterPath="$PROJECT_DIR$/financial_charting.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,11 +56,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/financial_charting.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
+            <state relative-caret-position="240">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -26,26 +68,35 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/untitled.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/WorkspaceTabs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="96" selection-start-line="96" selection-end-line="97" selection-end-column="60" />
+            <state relative-caret-position="1256">
+              <caret line="151" column="34" selection-start-line="151" selection-start-column="34" selection-end-line="151" selection-end-column="34" />
               <folding>
-                <element signature="e#18#24#0" expanded="true" />
+                <element signature="e#0#85#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/QComboSearch.py">
+        <entry file="file://$PROJECT_DIR$/QStockSearch.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
+            <state relative-caret-position="118">
+              <caret line="37" selection-start-line="37" selection-end-line="37" />
               <folding>
-                <element signature="e#46#96#0" expanded="true" />
+                <element signature="e#46#115#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.local/lib/python3.7/site-packages/matplotlib/backends/_backend_tk.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-4">
+              <caret line="345" selection-start-line="345" selection-end-line="345" />
             </state>
           </provider>
         </entry>
@@ -62,23 +113,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>workspace</find>
-      <find>t</find>
-      <find>res</find>
-      <find>rsrc</find>
-      <find>workspacetabs</find>
-      <find>QV</find>
-      <find>QVF</find>
-      <find>trigg</find>
-      <find>field</find>
       <find>sizepoli</find>
       <find>form_search</find>
       <find>show</find>
       <find>completer</find>
       <find>QWorkspaceTabs</find>
       <find>edit</find>
-      <find>view</find>
       <find>setModelColumn</find>
+      <find>select</find>
+      <find>view</find>
+      <find>custom</find>
+      <find>pushbu</find>
+      <find>listview</find>
+      <find>load_data</find>
+      <find>Currencies</find>
+      <find>QSymbolSearch</find>
+      <find>eventfilt</find>
+      <find>lineedit</find>
+      <find>setMo</find>
+      <find>model</find>
+      <find>digital currencies</find>
+      <find>menu_New</find>
+      <find>action_Chart</find>
+      <find>database</find>
+      <find>print</find>
+      <find>tuple</find>
+      <find>Workspa</find>
+      <find>get_</find>
+      <find>qfigWidget</find>
+      <find>get_li</find>
+      <find>plot_data</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -92,14 +156,16 @@
         <option value="$PROJECT_DIR$/mainwindow.ui" />
         <option value="$PROJECT_DIR$/workspacetabs.py" />
         <option value="$PROJECT_DIR$/SymbolSearch.py" />
-        <option value="$PROJECT_DIR$/UI_MainWindow.py" />
         <option value="$PROJECT_DIR$/UI_SymbolSearch.py" />
         <option value="$PROJECT_DIR$/QExtendedComboBox.py" />
         <option value="$PROJECT_DIR$/UI_WorkspaceTabs.py" />
-        <option value="$PROJECT_DIR$/WorkspaceTabs.py" />
         <option value="$PROJECT_DIR$/untitled.py" />
         <option value="$PROJECT_DIR$/QComboSearch.py" />
+        <option value="$PROJECT_DIR$/QCurrencySearch.py" />
+        <option value="$PROJECT_DIR$/UI_MainWindow.py" />
         <option value="$PROJECT_DIR$/financial_charting.py" />
+        <option value="$PROJECT_DIR$/QStockSearch.py" />
+        <option value="$PROJECT_DIR$/WorkspaceTabs.py" />
       </list>
     </option>
   </component>
@@ -108,6 +174,7 @@
     <option name="width" value="962" />
     <option name="height" value="269" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -119,6 +186,16 @@
             <path>
               <item name="financial_charting_python" type="b2602c69:ProjectViewProjectNode" />
               <item name="financial_charting_python" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="financial_charting_python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="financial_charting_python" type="462c0819:PsiDirectoryNode" />
+              <item name="alpha_vantage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="financial_charting_python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="financial_charting_python" type="462c0819:PsiDirectoryNode" />
+              <item name="symbol_lists" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -167,7 +244,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="QExtendedComboBox" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="QCurrencySearch" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="financial_charting_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -179,7 +256,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/QExtendedComboBox.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/QCurrencySearch.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="QStockSearch" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="financial_charting_python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/QStockSearch.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -233,9 +331,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.financial_charting" />
+        <item itemvalue="Python.QStockSearch" />
+        <item itemvalue="Python.QCurrencySearch" />
         <item itemvalue="Python.QComboSearch" />
         <item itemvalue="Python.untitled" />
-        <item itemvalue="Python.QExtendedComboBox" />
       </list>
     </recent_temporary>
   </component>
@@ -299,7 +398,14 @@
       <option name="project" value="LOCAL" />
       <updated>1559859836406</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="adds a database of all possible currency pairs and extends QComboBox to make a search box for symbols">
+      <created>1559946815977</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1559946815977</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -315,18 +421,18 @@
     <frame x="-1" y="0" width="962" height="539" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49809885" visible="true" weight="0.23483147" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49809885" visible="true" weight="0.16629213" />
       <window_info id="Structure" order="1" sideWeight="0.50190115" side_tool="true" weight="0.18539326" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32777777" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26944444" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39166668" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31944445" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.9166667" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32777777" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.9166667" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32777777" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.70555556" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -384,22 +490,11 @@
     <MESSAGE value="adds more robust plotting functionality" />
     <MESSAGE value="adds a search bar to the main toolbar to find currency/stock symbols" />
     <MESSAGE value="adds a full list of all possible currency pairs from single currency list" />
-    <option name="LAST_COMMIT_MESSAGE" value="adds a full list of all possible currency pairs from single currency list" />
+    <MESSAGE value="adds a database of all possible currency pairs and extends QComboBox to make a search box for symbols" />
+    <option name="LAST_COMMIT_MESSAGE" value="adds a database of all possible currency pairs and extends QComboBox to make a search box for symbols" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/QComboSearch.py</url>
-          <line>48</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/QComboSearch.py</url>
-          <line>78</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -436,46 +531,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/lib/python3.7/site-packages/alpha_vantage/alphavantage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3015">
-          <caret line="204" column="76" selection-start-line="204" selection-start-column="71" selection-end-line="204" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///usr/local/lib/python3.7/site-packages/alpha_vantage/alphavantage.py" />
     <entry file="file://$PROJECT_DIR$/SymbolSearch.py" />
     <entry file="file://$PROJECT_DIR$/resources.py" />
     <entry file="file://$PROJECT_DIR$/../workspace_tabs.py" />
     <entry file="file://$PROJECT_DIR$/QExtendedComboBox.py" />
     <entry file="file://$PROJECT_DIR$/workspace_tabs.py" />
     <entry file="file://$PROJECT_DIR$/UI_WorkspaceTabs.py" />
-    <entry file="file://$PROJECT_DIR$/WorkspaceTabs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-300">
-          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#85#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/UI_SymbolSearch.py" />
-    <entry file="file://$PROJECT_DIR$/UI_MainWindow.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="141" selection-start-line="141" selection-end-line="141" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/physical_currency_list.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Currencies.db">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/digital_currency_list.csv">
       <provider selected="true" editor-type-id="text-editor">
@@ -484,32 +553,84 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/QComboSearch.py" />
     <entry file="file://$PROJECT_DIR$/untitled.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="96" selection-start-line="96" selection-end-line="97" selection-end-column="60" />
-          <folding>
-            <element signature="e#18#24#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="91">
+          <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/QComboSearch.py">
+    <entry file="file://$PROJECT_DIR$/symbol_lists/AMEX.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
-          <folding>
-            <element signature="e#46#96#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="75">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Currencies.db" />
+    <entry file="file://$PROJECT_DIR$/combo_bg.png" />
+    <entry file="file://$PROJECT_DIR$/QCurrencySearch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="50" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/lib/python3.7/site-packages/matplotlib/dates.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="227" selection-start-line="227" selection-end-line="227" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UI_MainWindow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="718">
+          <caret line="109" column="58" selection-start-line="109" selection-start-column="58" selection-end-line="109" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/lib/python3.7/site-packages/matplotlib/backends/_backend_tk.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4">
+          <caret line="345" selection-start-line="345" selection-end-line="345" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/lib/python3.7/site-packages/matplotlib/backends/backend_tkagg.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/financial_charting.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
+        <state relative-caret-position="240">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QStockSearch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+          <folding>
+            <element signature="e#46#115#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WorkspaceTabs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1256">
+          <caret line="151" column="34" selection-start-line="151" selection-start-column="34" selection-end-line="151" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#85#0" expanded="true" />
           </folding>
         </state>
       </provider>

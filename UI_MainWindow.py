@@ -147,4 +147,4 @@ class Ui_MainWindow(object):
 
 
 from WorkspaceTabs import WorkspaceTabs
-import resources_rc
+# import resources_rc
